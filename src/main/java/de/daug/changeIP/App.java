@@ -59,8 +59,7 @@ public class App {
 			// cmd Befehl
 			String command = "cd \"" + System.getProperty("user.dir") + "\\resources\\fb_tools\" && fb_tools " + router
 					+ " getip";
-			
-			
+						
 			// aufrufen der cmd
 			ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", command);
 			builder.redirectErrorStream(true);
