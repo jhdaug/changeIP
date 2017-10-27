@@ -1,0 +1,169 @@
+fb_tools (c) by Michael Engelke <http://www.mengelke.de>
+
+V0.00 19.01.2013   (4.920 Bytes - Intern)
+ - Interne Request Funktion implementiert
+ - Login & Logout Funcktion implementiert
+ - Einfache Hilfeausgabe implementiert
+
+V0.01 07.02.2013   (6.333 Bytes - Intern)
+ - SystemStatus implementiert
+
+V0.02 10.02.2013   (8.403 Bytes - Intern)
+ - Fehlerverarbeitung verbessert
+ - Interne UPnP-Request Funktion implementiert
+ - GetIP implementiert
+ - Reconnect implementiert
+
+V0.03 17.02.2013   (9.029 Bytes - Intern)
+ - Option -c (Kodierung für die Console) implementiert
+ - Option-übergabe implementiert
+ - Hilfeausgabe verbessert
+
+V0.04 19.02.2013  (10.161 Bytes - Intern)
+ - Kleiner Bug in SystemStatus behoben
+ - Optionen -d (Debug) und -t (Timeout) implementiert
+ - Hilfeausgabe weiter verbessert
+
+V0.05 24.02.2013  (12.578 Bytes - Intern)
+ - Interne Request Funktion überarbeitet (POST/Multipart)
+ - SupportDaten implementiert
+ - Option -b (Buffergröße) implementiert
+ - Programmablauf für Login-Funktionen überarbeitet
+
+V0.06 19.03.2013  (13.630 Bytes - Intern)
+ - Automatische ermittung der Kodierung von der Console implementiert
+ - Info implementiert
+
+V0.07 30.03.2013  (15.139 Bytes - Intern)
+ - Dial implementiert
+ - Hilfeausgabe weiter verbessert
+
+V0.08 01.04.2013  (15.254 Bytes)
+ - Hilfe-Ausgabe verbessert
+
+V0.09 22.10.2013  (15.398 Bytes)
+ - Info-Option erkennt auch kurzschreibweise
+ - Bug im Dialer behoben: # lässt sich nicht wählen
+ - Externe IP ermittlung der aktuellen Firmware angepasst
+
+V0.10 07.01.2014  (21.960 Bytes)
+ - Config Export/Import implementiert (Mit CheckSum berechnung)
+ - Boxinfo implementiert (Jason_Boxinfo.xml)
+ - Interne Request-Funktion erweitert
+ - Weitere kleine Hilfs-Unterfunktionen implemmentiert
+ - Anpassung an PHP 5 für große RegEx-Ergebnisse
+
+V0.11 17.02.2014  (24.384 Bytes)
+ - Config in Konfig umbenannt
+ - Konfig akzeptiert auch DOS/Windows Dateien
+ - Konfig File implemmentiert
+ - Keine Trennung mehr zwischen Modes mit und ohne Login
+ - Script läuft immer bis zuende durch (Kein DIE oder EXIT mehr)
+ - Bug in Dial behoben (Das Telefon könnte nicht ausgewählt werden)
+
+V0.12 16.06.2014  (24.748 Bytes)
+ - UPnP-Funktionen ermitteln den Link-Pfad selber
+ - Erste anpassungen für PHP 5.5 (preg_replace -> preg_replace_callback)
+ - Unterstützung von CRYPTEDBINFILE bei Powerline-Konfig
+
+V0.13 25.06.2016  (54.254 Bytes)
+ - Bugs mit großeren PHP-Versionen entfernt
+ - Bug in der Konfig-Checksum berechnung entfernt
+ - Arbeitsgeschwindigkeit Optimiert (strtr)
+ - Text-Ausgabe verbessert
+ - Option -d verbessert (Mit Bit-Codierung)
+ - Option -w (Wortumbruch) implementiert (Unter Linux wird die Consolen-Breite automatisch ermittelt)
+ - Option -o (File-Output) implementiert
+ - Option -c:html implementiert
+ - NEU: Fritz!Konfig kann als Ordner im/exportiert werden (Mit Checksum berechnung)
+ - NEU: Alle Zugangsdaten können OHNE Telnet aus der Fritz!Konfig ausgelesen und angezeigt werden
+ - NEU: Die aktuelle Version kann mit dem Internet abgeglichen werden (mit automatischen Update)
+
+V0.14 30.06.2016  (55.495 Bytes)
+ - Bug in der Import-Funktion entfernt
+ - Workaround wenn PHP kein utf8 unterstützt (PHP 7.0 ohne php-xml unter Linux)
+ - Option -c:7bit implementiert (Fallback auf 7Bit wenn PHP kein utf8 unterstützt)
+ - UpGrade zeigt als Gag Cookies an ;-)
+ - Drag'n'Drop-Modus implementiert
+ - Suchfunktion für Zugangsdaten neu entwickelt (Leider auch nicht viel besser...)
+
+V0.15 07.07.2016  (66.023 Bytes)
+ - Bug in der UpGrade-Funktion entfernt (Das Umbenennen war fehlerhaft)
+ - Option -s (sid) erweitert (Damit sind umfangreiche Batch-Dateien möglich)
+ - Option -w (Wortumbruch) erweitert (Unter Windows wird ebenfalls die Consolen-Breite automatisch ermittelt)
+ - Zugangsdaten können auch bei einer Internationalen Fritz!Box (z.B. 4020) ausgelesen/entschlüsselt werden
+ - Verbesserte Fehlermeldung
+ - Auto-Update Check implementiert (Abschaltbar)
+ - Konfig->JSON Konverter implementiert
+ - Request-Download implementiert (z.Z. nur für SupportDaten und Konfig Export)
+ - Debug-Ausgabe erweitert
+ - Plugin-Schnittstelle eingebaut, damit können eigene Script in FB_Tools eingebunden werden (Mit Beispielscript)
+
+V0.16 20.07.2016  (79.470 Bytes)
+ - Bug in Drag entfernt (Parameterzähler war falsch)
+ - Bug: Ansi-Ausgabe war nicht Möglich - jetzt auch zusätzlich cp1252, iso8859
+ - Kleine Bugs in Dial und Login/out entfernt
+ - Windows-Version an die PowerShell angepasst und Einschränkung mit 9 Maximalen Parametern aufgehoben
+ - Optionen erweitert - Jetzt können die Optionen auch einzeln übergeben werden
+ - Option -s akzeptiert auch eine Datei, in der sich die SID befindet
+ - Option Hilfe aufgeteilt (Beispiele und Optionen können zusätzlich ausgegeben werden)
+ - Neue Optionen zum Einloggen (-fw, -fb, -un, -pw, -pt) implementiert
+ - Konfig-DeCrypt verbessert (Entschlüsselt auch Konfigurationen mit mehreren Kennwörtern - Danke an Herby007)
+ - Zugangsdatenübersicht für WLAN, VoIP und TR069 verbessert, unnötige Einträge werden in der Übersicht weggelassen
+ - NEU: Ereignisse können ausgelesen und Syncronisiert werden
+ - NEU: SupportDaten können ab OS 6.5 extrahiert werden
+ - Interne Routinen zu Login, Optionen und Konfig geändert bzw. verbessert
+ - Kleines EasterEgg versteckt
+
+V0.17 06.08.2016  (83.024 Bytes)
+ - Bug: FRITZ!WLAN Repeater N/G machte probleme beim Login und im Dateinamen
+ - Bug: SID wird nur noch dann gesendet, wenn eine vorhanden ist
+ - Bug: Beim Update unter Linux wurde chmod nicht korrekt gesetzt
+ - Debug-Behandlung verbessert
+ - Optionen-Erkennung etwas verbessert
+ - Timeout für sehr langsame Fritz!Boxen von 3 auf 30 Sekunden erhöht (ist mit -t:<sec> veränderbar)
+ - UpGrade in "info update" umbenannt
+ - Konfig-DeCrypt verbessert (Entschlüsselt auch Kennwörter im Binaer-Bereich der Konfig - Danke für den Hinweis)
+ - Zugangsdatenübersicht mit DECT-eMail erweitert
+ - Supportdaten ünterstützt nun ab OS 6.5 Telemetrie
+ - Alle Neu erstellen Ordner unterstützen strftime im Ordnernamen und können weitere Unterordner enthalten
+
+V0.18 20.08.2016  (83.355 Bytes)
+ - Bug: Downloads waren teilweise immer file.bin
+ - Bug: Bei allen HTTP-Requests wurden fehlerhafte HTTP-Header geschickt
+ - Zugangsdatenübersicht an Repeatern angepasst
+ - PHP Extensions werden auch im Unterordner ext gesucht
+ - Char-Kodierung: ASCII hinzugefügt
+
+V0.19 29.01.2017  (88.947 Bytes)
+ - Bug in Auto-Update-Check beseitigt
+ - Firmware wird nun auch bei Labor-Versionen korrekt erkannt
+ - Ereignisse und Konfig-DeCrypt an OS 6.8 angepasst
+ - Workaround für Konfig-DeCrypt an Fritz!Box 7312 implemmentiert
+ - GetIP unterstützt nun auch DNS und IPv6
+ - Info StrfTime implementiert
+ - Workaround für HTTP-Fehler 503 implementiert
+
+V0.20 20.03.2017  (98.538 Bytes)
+ - Char-Kodierung: cp65001 (utf8) hinzugefügt
+ - Workaround für PowerShell Erkennung verbessert
+ - GetIP: Filter implemmentiert
+ - Konfig DeCrypt: Internationale Sprachen an OS 6.8 angepasst
+ - Konfig Extract: pattern.txt in index.txt umbenannt
+ - Konfig Extract/File/Import: Unterstützung von gz-Dateien / tar/tgz-Archiven
+ - SupportDaten: Unterstützung von gz-Dateien
+ - SupportDaten Extrakt: Unterstützung von tar/tgz-Archiven
+ - pcre.backtrack_limit von 16 MB auf 64 MB erhöht
+
+V0.21 01.04.2017 (100.200 Bytes)
+ - Bug in Anmeldung mit älteren Boxen behoben
+ - Bug in Info StrfTime entfernt, die bei Windows 2000 / XP auftreten
+ - Downloads können auch mit GZip gepackt werden
+ - Erste vorbereitungen getroffen, um FB_Tools außerhalb der Konsole zu betreiben
+
+V0.22 11.04.2017 (102.000 Bytes)
+ - Bug: date.timezone wird nun etwas früher gesetzt
+ - Bug: Ereignisse machte bei deaktivierten wrap Probleme
+ - Bug: Windows-Laufwerksbuchstaben wurden bei Pathangaben entwertet
+ - Bug: SID-Option funktionierte nicht richtig
+ - Neuer Parameter für Login (Speichert SID mit Firmware-Version und Host-Daten)
