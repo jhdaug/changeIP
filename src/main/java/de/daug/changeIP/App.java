@@ -22,7 +22,7 @@ import de.daug.changeIP.Config;
  *         xxx@xxx.gserviceaccount.com.
  * 
  *         Die API des Tagmanagers muss aktiviert sein:
- *         https://console.developers.google.com/apis/dashboard?project=iptotag&authuser=0
+ *         https://console.developers.google.com/apis/dashboard?project=projectname&authuser=0
  *         mit xxx@xxx.de erstellt.
  */
 public class App {
