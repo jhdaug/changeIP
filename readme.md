@@ -3,6 +3,7 @@
 > - php installieren
 > - java installieren
 > - **das Programm braucht Admin-Rechte**
+> - **Da die cmd.exe aufgerufen wird, funktioniert das Programm nur auf Windows.**
 
 > - in den [Google APIs](console.developers.google.com) muss ein Projekt angelegt sein
 > - hier muss ein Dienstkontoschluessel erstellt werden
