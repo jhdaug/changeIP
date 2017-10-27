@@ -5,7 +5,7 @@
 > - **das Programm braucht Admin-Rechte**
 > - **Da die cmd.exe aufgerufen wird, funktioniert das Programm nur auf Windows.**
 
-> - in den [Google APIs](console.developers.google.com) muss ein Projekt angelegt sein
+> - in der Console unter [Google Developers](http://www.console.developers.google.com) muss ein Projekt angelegt sein
 > - hier muss ein Dienstkontoschluessel erstellt werden
 > - die .p12-Datei im resources-Ordner speichern
 
