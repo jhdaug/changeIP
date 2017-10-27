@@ -11,13 +11,13 @@
 ### Bei Aenderung des Codes oder zur Erstellung der jar-Datei:
 
 - Maven installieren
-- im cmd:
+- im Terminal:
 1. zum Ordner changeIP navigieren
 2. mvn install
 
 ### Zum haendischen Ausfuehren des Programms:
 
-- im cmd:
+- im Terminal:
 1. in den Ordner target vom Projekt changeIP navigieren
 2. java -jar changeIP-0.0.1.jar
 
