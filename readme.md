@@ -22,24 +22,24 @@
 2. java -jar changeIP-0.0.1.jar
 
 
-### automatische Ausfuerung mithilfe des Windows Task Scheduler (Aufgabenplanung)
+### Automatische Ausfuerung mithilfe des Windows Task Scheduler (Aufgabenplanung)
 
 0. run.bat anlegen, falls nicht vorhanden
-in die Datei folgendes eintragen
+  - in die Datei folgendes eintragen
 ```
 java -jar changeIP-0.0.1.jar
 ```
 
 1. einfache Aufgabe erstellen
-Name: beliebiger Name
+  - Name: beliebiger Name
 
 2. Trigger einstellen
-taeglich, Uhrzeit einstellen
+  - taeglich, Uhrzeit einstellen
 
 3. Aktionen
-Programm starten
-zur run.bat im target-Ordner navigieren und auswaehlen
-Starten in: Pfad des target-Ordners
+  - Programm starten
+  - zur run.bat im target-Ordner navigieren und auswaehlen
+  - Starten in: Pfad des target-Ordners
 
 
 ### Credits
