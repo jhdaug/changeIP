@@ -2,12 +2,11 @@
 
 > - php installieren
 > - java installieren
-
 > - **das Programm braucht Admin-Rechte**
 
 > - in den [Google APIs](console.developers.google.com) muss ein Projekt angelegt sein
 > - hier muss ein Dienstkontoschluessel erstellt werden
-> - die .p12-Datei speichern
+> - die .p12-Datei im resources-Ordner speichern
 
 ### Bei Aenderung des Codes oder zur Erstellung der jar-Datei:
 
